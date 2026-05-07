@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fb9336ee8ae45eb3dfcae40080a708, type: 3}
+  m_Name: Neptuno
+  m_EditorClassIdentifier: 
+  shipName: Neptuno
+  constructionYear: 1819
+  shipDescription: "El Vapor Neptuno: Pionero de la Navegaci\xF3n en Cuba\r\nContexto
+    Hist\xF3rico\r\n\r\nEl Neptuno no fue solo un barco; fue el s\xEDmbolo del inicio
+    de la Revoluci\xF3n Industrial en el Caribe. En una \xE9poca donde el comercio
+    de az\xFAcar depend\xEDa de los vientos, la llegada del vapor cambi\xF3 para
+    siempre la econom\xEDa de la Isla de Cuba.\r\nFicha T\xE9cnica y Origen\r\n\r\n   
+    Construcci\xF3n: Fabricado en los astilleros de Nueva York bajo encargo de empresarios
+    cubanos.\r\n\r\n    Arribo a Cuba: Lleg\xF3 al puerto de La Habana en 1819, solo
+    12 a\xF1os despu\xE9s de que Robert Fulton navegara el Hudson.\r\n\r\n    Propulsi\xF3n:
+    Sistema de ruedas de paletas laterales movidas por una m\xE1quina de vapor de
+    baja presi\xF3n.\r\n\r\n    Materiales: Casco de madera reforzado para resistir
+    el oleaje del tr\xF3pico.\r\n\r\nHito Hist\xF3rico\r\n\r\nEl 11 de febrero de
+    1819, el Neptuno realiz\xF3 su viaje inaugural entre La Habana y Matanzas. Este
+    trayecto, que antes pod\xEDa tardar d\xEDas dependiendo de la calma chicha o
+    los vientos contrarios, se redujo a unas pocas horas, garantizando por primera
+    vez un horario fijo de transporte.\r\nImpacto en el Patrimonio Naval\r\n\r\nSu
+    \xE9xito impuls\xF3 la creaci\xF3n de la \"Real Caja de Consolidaci\xF3n\" y
+    foment\xF3 la creaci\xF3n de nuevas l\xEDneas navales que conectaron los puertos
+    de C\xE1rdenas, Mariel y Bataban\xF3. El Neptuno abri\xF3 el camino para que
+    Cuba tuviera, a mediados del siglo XIX, una de las flotas de vapor m\xE1s modernas
+    de Am\xE9rica, superando incluso a muchas naciones europeas de la \xE9poca."
+  shipIcon: {fileID: 2800000, guid: 493ca1e17a6f42ddb5c6ce97594810c3, type: 3}
+  shipPrefab: {fileID: 0}
+  scaleMultiplier: 1
+  podcastClip: {fileID: 8300000, guid: 03776d24bd1f9c74693d91648c37ff67, type: 3}

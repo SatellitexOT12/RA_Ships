@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/UI_CSS.uss?fileID=7433441132597879392&amp;guid=b4e59938e24bf2b4f84e9cebc57c7913&amp;type=3#UI_CSS" />
+    <ui:VisualElement name="MainContainer" picking-mode="Ignore" class="main-container">
+        <ui:VisualElement name="TopPanel" picking-mode="Ignore" class="top-panel">
+            <ui:Label text="Patrimonio Naval AR" class="app-title" />
+        </ui:VisualElement>
+        <ui:VisualElement name="CenterPanel" picking-mode="Ignore" class="center-panel">
+            <ui:VisualElement name="Reticle" picking-mode="Ignore" class="focus-frame" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomBar" picking-mode="Ignore" class="bottom-bar">
+            <ui:Button name="BtnGallery" text="Gal" class="nav-button" />
+            <ui:VisualElement picking-mode="Ignore" class="center-btn-container">
+                <ui:Button name="BtnScan" class="nav-button center-button" />
+            </ui:VisualElement>
+            <ui:Button name="BtnCompare" text="Reloj" class="nav-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="InfoCard" picking-mode="Ignore" class="info-card" style="display: none;">
+            <ui:Label name="ShipName" text="Nombre" class="info-title" />
+            <ui:Label name="ShipDescription" text="Desc..." class="info-desc" />
+            <ui:Button name="BtnCloseCard" text="Cerrar" class="close-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="GalleryScreen" class="gallery-screen" style="display: none;">
+            <ui:VisualElement class="gallery-header" style="flex-direction: row; justify-content: space-between; align-items: center; padding: 15px;">
+                <ui:Label text="Patrimonio Naval" class="app-title" />
+                <ui:Button name="BtnCloseGallery" text="X" class="close-icon-button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TabsContainer" style="flex-direction: row; justify-content: center; padding: 10px;">
+                <ui:Button name="TabShips" text="Flota" class="tab-button tab-active" style="flex-grow: 1;" />
+                <ui:Button name="TabPodcasts" text="Relatos" class="tab-button" style="flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:ScrollView name="GalleryScroll" class="gallery-scroll" style="flex-grow: 1;" />
+            <ui:ScrollView name="PodcastScroll" class="gallery-scroll" style="flex-grow: 1; display: none;" />
+            <ui:VisualElement name="ShipDetailsView" class="details-view-popup" style="display: none; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.98);">
+                <ui:VisualElement class="details-header" style="flex-direction: row; justify-content: space-between; padding: 15px; align-items: center;">
+                    <ui:Label name="DetailsTitle" text="Nombre del Barco" class="info-title" />
+                    <ui:Button name="BtnCloseDetails" text="Volver" class="close-button" />
+                </ui:VisualElement>
+                <ui:ScrollView class="details-content-scroll" style="flex-grow: 1; padding: 20px;">
+                    <ui:VisualElement name="DetailsImage" class="gallery-icon" style="height: 220px; width: 100%; border-radius: 15px; margin-bottom: 20px;" />
+                    <ui:Label name="DetailsFullText" text="..." class="info-desc" style="white-space: normal; font-size: 16px; line-height: 24px;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fb9336ee8ae45eb3dfcae40080a708, type: 3}
+  m_Name: Isabell II
+  m_EditorClassIdentifier: 
+  shipName: Isabel II
+  podcastClip: {fileID: 8300000, guid: 03776d24bd1f9c74693d91648c37ff67, type: 3}
+  constructionYear: 1836
+  shipDescription: "    Constructor: Reales Astilleros de Esteiro, Ferrol, Espa\xF1a.\r\n\r\n   
+    Botadura: 23 de noviembre de 1836 (hay discrepancia en la fuente, pero la mayor\xEDa
+    menciona 1836).\r\n\r\n    Armamento: 44 ca\xF1ones. Un detalle m\xE1s preciso
+    indica que en 1847 llevaba 26 ca\xF1ones de a 24 libras, 16 carronadas de 28
+    y 2 ca\xF1ones de 8 libras.\r\n\r\n    Tripulaci\xF3n: 355 hombres.\r\n\r\n   
+    Comandante: Capit\xE1n de fragata Don Juan Bautista Lazaga.\r\n\r\nHistoria:
+    Esta fragata de vela, la m\xE1s antigua de las que llevaron el nombre \"Isabel
+    II\", tuvo una larga vida operativa. Estuvo basada en La Habana durante la d\xE9cada
+    de 1840 y form\xF3 parte de una divisi\xF3n de adiestramiento en 1846. Posteriormente,
+    sirvi\xF3 como escuela pr\xE1ctica de artilleros y fue reclasificada como corbeta
+    en 1855. Particip\xF3 en la revista naval de Alicante en 1858 con la presencia
+    de la reina Isabel II."
+  shipIcon: {fileID: 2800000, guid: 91a44d1c50f4296408600474f0395082, type: 3}
+  shipPrefab: {fileID: 0}
+  scaleMultiplier: 1

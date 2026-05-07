@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fb9336ee8ae45eb3dfcae40080a708, type: 3}
+  m_Name: "Cuba_Espa\xF1ola"
+  m_EditorClassIdentifier: 
+  shipName: "Cuba Espa\xF1ola"
+  podcastClip: {fileID: 8300000, guid: 6c78b8bd236c95a4784d2f082176d2c5, type: 3}
+  constructionYear: 1870
+  shipDescription: "El \"Cuba Espa\xF1ola\" fue parte de la flota espa\xF1ola en
+    Cuba durante un per\xEDodo muy convulso. Su construcci\xF3n en La Habana refleja
+    la importancia de la isla como base naval espa\xF1ola en el siglo XIX.\r\n\r\n   
+    Guerra de los Diez A\xF1os (1868-1878): Su construcci\xF3n y entrada en servicio
+    coincidieron con la primera gran guerra por la independencia de Cuba. Fue construido
+    con el prop\xF3sito de proteger las costas cubanas y apoyar al ej\xE9rcito espa\xF1ol
+    contra los independentistas.\r\n\r\n    Operaciones (1897): Durante la Guerra
+    de Independencia cubana (1895-1898), el ca\xF1onero escolt\xF3 a transportes
+    de tropas y combati\xF3 contra naves insurgentes. En febrero de 1897, escoltaba
+    al vapor \"Fausto\" y la goleta \"Engracia\" cuando entr\xF3 en combate, logrando
+    hundir cuatro naves enemigas y capturar una quinta.\r\n\r\n    Guerra Hispano-Estadounidense
+    (1898): Al estallar la guerra con Estados Unidos, el \"Cuba Espa\xF1ola\" continu\xF3
+    prestando servicio en el Apostadero de La Habana. Fue mencionado en los partes
+    de guerra durante el conflicto, donde se capturaron botes insurgentes.\r\n\r\n   
+    Fin de la Soberan\xEDa Espa\xF1ola: Tras la derrota espa\xF1ola en 1898 y la
+    posterior firma del Tratado de Par\xEDs, Cuba pas\xF3 a ser un protectorado estadounidense.
+    El 1 de enero de 1899, en La Habana, se arri\xF3 la bandera espa\xF1ola y se
+    iz\xF3 la estadounidense, marcando el fin de la presencia colonial de Espa\xF1a
+    en la isla. El ca\xF1onero \"Cuba Espa\xF1ola\" fue uno de los buques que presenci\xF3
+    este momento hist\xF3rico."
+  shipIcon: {fileID: 2800000, guid: 8a8fd254a82090745a3dc24fc84067f6, type: 3}
+  shipPrefab: {fileID: 0}
+  scaleMultiplier: 1

@@ -1,0 +1,244 @@
+.main-container {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.top-panel {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.app-title {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    -unity-font-style: bold;
+}
+
+.center-panel {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus-frame {
+    width: 250px;
+    height: 250px;
+    border-width: 4px;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bottom-bar {
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+    border-width: 0;
+}
+
+.center-btn-container {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(0, 120, 215);
+    position: absolute;
+    bottom: 20px;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+}
+
+.info-card {
+    position: absolute;
+    bottom: 130px;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(30, 30, 30, 0.95);
+    border-radius: 15px;
+    padding: 20px;
+    border-width: 2px;
+    border-color: rgb(197, 160, 89);
+    align-items: center;
+}
+
+.info-title {
+    color: white;
+    font-size: 22px;
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+.info-desc {
+    color: rgb(220, 220, 220);
+    font-size: 14px;
+    white-space: normal;
+    margin-bottom: 20px;
+    -unity-text-align: upper-center;
+}
+
+.close-button {
+    background-color: rgb(180, 50, 50);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 30px;
+    border-width: 0;
+    -unity-font-style: bold;
+    font-size: 14px;
+}
+
+.gallery-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(30, 30, 30);
+    padding: 20px;
+}
+
+.gallery-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.close-icon-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    -unity-font-style: bold;
+    border-width: 0;
+}
+
+.gallery-scroll {
+    flex-grow: 1;
+}
+
+.gallery-card {
+    background-color: rgb(50, 50, 50);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    flex-direction: row;
+    align-items: center;
+    border-left-width: 4px;
+    border-left-color: rgb(197, 160, 89);
+}
+
+.gallery-title {
+    color: white;
+    font-size: 18px;
+    -unity-font-style: bold;
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.gallery-icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 8px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.unity-scroller__low-button {
+    display: none;
+    opacity: 0;
+}
+
+.unity-scroller__high-button {
+    display: none;
+    opacity: 0;
+}
+
+.unity-scroller__vertical .unity-base-slider__tracker {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-width: 0;
+    width: 4px;
+    align-self: center;
+}
+
+.unity-scroller__vertical .unity-base-slider__dragger {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    width: 6px;
+    border-width: 0;
+    left: -1px;
+}
+
+.unity-scroller__vertical .unity-base-slider__dragger:hover {
+    background-color: rgb(197, 160, 89);
+}
+
+.unity-scroller__vertical .unity-base-slider__dragger:active {
+    background-color: rgb(197, 160, 89);
+}
+/* Contenedor de las pestañas */
+#TabsContainer {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    margin: 10px 20px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: rgba(197, 160, 89, 0.2); /* Dorado muy suave */
+}
+
+/* Estilo base de los botones de pestaña */
+.tab-button {
+    background-color: transparent;
+    color: #888888;
+    border-radius: 20px;
+    border-width: 0;
+    padding: 10px;
+    font-size: 14px;
+    -unity-font-style: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Pestaña Activa (El estado seleccionado) */
+.tab-active {
+    background-color: #C5A059; /* El dorado de tu temática */
+    color: #1A1A1A; /* Texto oscuro para contraste */
+    border-bottom-width: 0;
+}
+
+/* Efecto al pasar el dedo (Hover/Touch) */
+.tab-button:hover {
+    color: #C5A059;
+}
+/* Feedback al tocar la tarjeta de audio */
+.gallery-card:active {
+    background-color: rgba(197, 160, 89, 0.2);
+    scale: 0.98; /* Efecto de hundimiento tipo botón */
+    transition: scale 0.1s;
+}
+
+/* Estilo para cuando el texto indica que está sonando */
+.playing-highlight {
+    color: white;
+    -unity-font-style: bold;
+}
