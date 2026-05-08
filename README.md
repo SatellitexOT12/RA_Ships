@@ -1,8 +1,8 @@
-# RA Ahora es Personal - Realidad Aumentada Marítima
+# Aplicacion de Realidad Aumentada para la transicion vela-vapor
 
 ## 📱 Descripción del Proyecto
 
-**RA Ahora es Personal** es una aplicación de Realidad Aumentada (AR) para Android que te permite explorar la fascinante historia de la transición de vela a vapor durante el siglo XIX en el puerto de La Habana. 
+Es una aplicación de Realidad Aumentada (AR) para Android que te permite explorar la fascinante historia de la transición de vela a vapor durante el siglo XIX en el puerto de La Habana. 
 
 A través de esta aplicación, podrás escanear planos históricos de barcos y visualizar modelos 3D interactivos que reviven la era de transformación del transporte marítimo cubano, cuando los barcos a vela fueron progresivamente reemplazados por embarcaciones a vapor.
 
