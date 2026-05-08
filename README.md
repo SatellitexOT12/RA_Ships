@@ -19,7 +19,6 @@ A través de esta aplicación, podrás escanear planos históricos de barcos y v
 ### Para Usuarios
 - **Android 7.0** o superior
 - Dispositivo con cámara trasera
-- Conexión a internet (para descarga de recursos)
 - Sensores de movimiento (acelerómetro, giroscopio)
 
 ### Para Desarrolladores
