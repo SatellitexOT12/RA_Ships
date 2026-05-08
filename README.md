@@ -95,4 +95,4 @@ Para preguntas o soporte técnico, por favor contacta al equipo de desarrollo de
 
 ---
 
-**RA Ahora es Personal** - Conectndo la realidad aumentada con la historia marítima 🌊⛵🚢
+Conectando la realidad aumentada con la historia marítima 🌊⛵🚢
