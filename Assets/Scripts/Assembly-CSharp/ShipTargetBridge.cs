@@ -34,5 +34,12 @@ public class ShipTargetBridge : MonoBehaviour
         {
             arController.ResetScanStatus();
         }
+
+        // Destruir el modelo 3D cuando desaparece el target
+        if (_instantiatedModel != null)
+        {
+            Destroy(_instantiatedModel);
+            _instantiatedModel = null;
+        }
     }
 }

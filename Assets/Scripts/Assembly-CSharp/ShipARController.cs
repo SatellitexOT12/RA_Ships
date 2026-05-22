@@ -72,7 +72,7 @@ public class ShipARController : MonoBehaviour
         if (_reticle != null) _reticle.AddToClassList("reticle-scanning");
         if (_maskContainer != null) _maskContainer.style.display = DisplayStyle.Flex;
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.8f);
 
         if (!_isShipInView) yield break;
 
@@ -100,6 +100,10 @@ public class ShipARController : MonoBehaviour
 
         if (_reticle != null) _reticle.RemoveFromClassList("reticle-scanning");
         if (_maskContainer != null) _maskContainer.style.display = DisplayStyle.None;
+        
+        // Limpiar referencias del modelo
+        _currentPendingModel = null;
+        _currentPendingData = null;
     }
 
     public void HideCard()

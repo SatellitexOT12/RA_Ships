@@ -85,37 +85,34 @@ public class GalleryUIHandler : MonoBehaviour
 
     // Llena la lista de Podcasts (Relatos)
     private void PopulatePodcasts()
-{
-    if (_podcastScroll == null || shipDatabase == null) return;
-    _podcastScroll.Clear();
-
-    foreach (var ship in shipDatabase)
     {
-        VisualElement card = CreateBaseCard(ship);
-        
-        // Creamos un contenedor para los controles
-        VisualElement controls = new VisualElement();
-        controls.style.flexDirection = FlexDirection.Row;
-        controls.style.alignItems = Align.Center;
-        controls.style.marginTop = 5;
+        if (_podcastScroll == null || shipDatabase == null) return;
+        _podcastScroll.Clear();
 
-        // Etiqueta de estado/botón
-        Label statusLabel = new Label("▶ REPRODUCIR RELATO");
-        statusLabel.name = "StatusLabel_" + ship.shipName; // Nombre único para buscarlo luego
-        statusLabel.style.color = new Color(0.77f, 0.63f, 0.35f);
-        statusLabel.style.fontSize = 12;
-        statusLabel.style.unityFontStyleAndWeight = FontStyle.Bold;
+        foreach (var ship in shipDatabase)
+        {
+            VisualElement card = CreateBaseCard(ship);
+            
+            // Creamos un contenedor para los controles
+            VisualElement controls = new VisualElement();
+            controls.AddToClassList("podcast-controls");
 
-        controls.Add(statusLabel);
-        card.Add(controls);
+            // Etiqueta de estado/botón
+            Label statusLabel = new Label("▶ REPRODUCIR RELATO");
+            statusLabel.name = "StatusLabel_" + ship.shipName; // Nombre único para buscarlo luego
+            statusLabel.style.color = new Color(0.77f, 0.63f, 0.35f);
+            statusLabel.AddToClassList("podcast-status-label");
 
-        card.RegisterCallback<ClickEvent>(ev => {
-            HandlePodcastPlayback(ship, statusLabel);
-        });
+            controls.Add(statusLabel);
+            card.Add(controls);
 
-        _podcastScroll.Add(card);
+            card.RegisterCallback<ClickEvent>(ev => {
+                HandlePodcastPlayback(ship, statusLabel);
+            });
+
+            _podcastScroll.Add(card);
+        }
     }
-}
 
 private void HandlePodcastPlayback(ShipData ship, Label currentLabel)
 {
@@ -170,18 +167,25 @@ private void ResetAllPodcastLabels()
     {
         VisualElement card = new VisualElement();
         card.AddToClassList("gallery-card");
+        
+        // Contenedor para icono y título (en fila)
+        VisualElement headerRow = new VisualElement();
+        headerRow.style.flexDirection = FlexDirection.Row;
+        headerRow.style.alignItems = Align.Center;
 
         if (ship.shipIcon != null)
         {
             VisualElement icon = new VisualElement();
             icon.style.backgroundImage = new StyleBackground(ship.shipIcon);
             icon.AddToClassList("gallery-icon");
-            card.Add(icon);
+            headerRow.Add(icon);
         }
 
         Label nameLabel = new Label(ship.shipName);
         nameLabel.AddToClassList("gallery-title");
-        card.Add(nameLabel);
+        headerRow.Add(nameLabel);
+        
+        card.Add(headerRow);
 
         return card;
     }

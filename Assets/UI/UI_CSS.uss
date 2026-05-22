@@ -143,10 +143,11 @@
     border-radius: 12px;
     padding: 15px;
     margin-bottom: 15px;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
     border-left-width: 4px;
     border-left-color: rgb(197, 160, 89);
+    min-height: 100px;
 }
 
 .gallery-title {
@@ -155,6 +156,9 @@
     -unity-font-style: bold;
     flex-grow: 1;
     margin-left: 15px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .gallery-icon {
@@ -241,4 +245,22 @@
 .playing-highlight {
     color: white;
     -unity-font-style: bold;
+}
+
+/* Contenedor de controles en las tarjetas de podcast */
+.podcast-controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    flex-shrink: 0;
+    padding-right: 10px;
+}
+
+/* Etiqueta de estado del podcast */
+.podcast-status-label {
+    white-space: nowrap;
+    font-size: 12px;
+    -unity-font-style: bold;
+    flex-shrink: 0;
 }
